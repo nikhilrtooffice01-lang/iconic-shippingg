@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Send Enquiry | Get a Quote – ICONIC SHIPPING SERVICES</title>
+<meta name="description" content="Submit your vessel requirement. Share port, ETA and items needed. ICONIC replies with a quotation by email for ship chandling and marine services.">
+<link rel="canonical" href="https://iconicshipping.org/enquiry.html">
+<meta property="og:title" content="Send Enquiry | ICONIC SHIPPING SERVICES">
+<meta property="og:description" content="Get a quotation for marine supplies, port clearance or technical services.">
+<meta property="og:image" content="https://iconicshipping.org/assets/hero-iconic.jpg">
+<meta property="og:url" content="https://iconicshipping.org/enquiry.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="YOUR_SEARCH_CONSOLE_CODE">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/extras.css">
+<link rel="stylesheet" href="/modern.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "name": "Send Enquiry | ICONIC SHIPPING SERVICES",
+      "url": "https://iconicshipping.org/enquiry.html",
+      "description": "Submit a vessel requirement and receive a quotation."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://iconicshipping.org/" },
+        { "@type": "ListItem", "position": 2, "name": "Enquiry", "item": "https://iconicshipping.org/enquiry.html" }
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+<main>
+  <section class="page-hero">
+    <p class="eyebrow">GET A QUOTE</p>
+    <h1>Send Your Enquiry</h1>
+    <p>Share vessel details, port, ETA and requirement. We reply with a quotation by email.</p>
+  </section>
+
+  <section class="page-content">
+    <div class="enquiry-wrap">
+      <div class="enquiry-info">
+        <h2>Tell us what your vessel needs.</h2>
+        <p>For urgent requirements, call or WhatsApp. For planned supply and port services, use the form.</p>
+        <a class="whatsapp" href="https://wa.me/919712476193?text=Hello%20ICONIC%20SHIPPING%20SERVICES%2C%20I%20have%20a%20vessel%20requirement." target="_blank" rel="noopener">💬 WhatsApp Requirement</a>
+        <p style="margin-top:20px;font-size:14px;color:var(--muted)">📞 +91 97124 76193<br>✉️ supply@iconicshipping.org</p>
+      </div>
+      <form id="enquiryForm">
+        <div class="row">
+          <label>Name*<input name="name" required></label>
+          <label>Company<input name="company"></label>
+        </div>
+        <div class="row">
+          <label>Email*<input type="email" name="email" required></label>
+          <label>Phone<input name="phone"></label>
+        </div>
+        <div class="row">
+          <label>Vessel<input name="vessel"></label>
+          <label>IMO No.<input name="imo"></label>
+        </div>
+        <div class="row">
+          <label>Port<input name="port"></label>
+          <label>ETA<input type="datetime-local" name="eta"></label>
+        </div>
+        <label>Service*<select id="service" name="service" required></select></label>
+        <label>Requirement*<textarea name="message" rows="5" required placeholder="Item, maker/model, part number, quantity, repair scope..."></textarea></label>
+        <button class="btn primary" type="submit">Submit Enquiry →</button>
+        <div id="status"></div>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="/config.js"></script>
+<script src="/ports.js"></script>
+<script src="/layout.js"></script>
+<script src="/whatsapp.js"></script>
+<script src="/app.js"></script>
+<script src="/fx.js"></script>
+</body>
+</html>
